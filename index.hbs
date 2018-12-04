@@ -1,0 +1,9 @@
+{{!< default}} 
+<main>
+    
+    <h2>Post List:</h2>
+    {{#foreach posts}}
+        {{!-- The tag below includes the markup for each post - partials/post-card.hbs --}}
+        <li><a href="{{url}}">{{ title }}</a></li>
+    {{/foreach}}
+</main>

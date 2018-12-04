@@ -1,0 +1,27 @@
+{{!< default}}
+
+
+{{!-- Everything inside the #post tags pulls data from the post --}}
+{{#post}}
+
+<main>
+    <h1>{{title}}</h1>
+    {{content}}
+
+</main>
+
+
+
+{{!-- Floating header which appears on-scroll, included from includes/floating-header.hbs --}}
+{{!-- {{> floating-header}} --}}
+
+{{/post}}
+
+
+
+{{#contentFor "scripts"}}
+<script>
+// There to type user scripts
+// such as Mathjax or other
+</script>
+{{/contentFor}}
